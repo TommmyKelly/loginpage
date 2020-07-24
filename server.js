@@ -3,7 +3,7 @@ if (process.env.NODE_ENV !== 'production'){
 }
 
 
-var port = process.env.port || 3000
+var port = process.env.port
 
 const express = require('express')
 const { request } = require('http')
