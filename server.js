@@ -3,7 +3,7 @@ if (process.env.NODE_ENV !== 'production'){
 }
 
 
-var port = process.env.port || 3000
+const PORT = process.env.PORT || 3000;
 
 const express = require('express')
 const { request } = require('http')
@@ -91,4 +91,7 @@ function checkNotAuthenticated(req, res, next){
 }
 
 
-app.listen(port,()=> console.log(port))
+//app.listen(port,()=> console.log(port))
+app.listen(PORT, () => {
+    console.log(`Our app is running on port ${ PORT }`);
+});
