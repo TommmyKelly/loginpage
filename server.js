@@ -91,4 +91,4 @@ function checkNotAuthenticated(req, res, next){
 }
 
 
-app.listen(port,()=> console.log('listening'))
+app.listen(port,()=> console.log(port))
