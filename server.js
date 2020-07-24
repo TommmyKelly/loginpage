@@ -3,7 +3,7 @@ if (process.env.NODE_ENV !== 'production'){
 }
 
 
-
+var port = process.env.port || 3000
 
 const express = require('express')
 const { request } = require('http')
@@ -91,4 +91,4 @@ function checkNotAuthenticated(req, res, next){
 }
 
 
-app.listen(3000,()=> console.log('listening'))
+app.listen(port,()=> console.log('listening'))
